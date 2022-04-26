@@ -1,10 +1,305 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body></body>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>에어비앤비: 휴가용 임대 숙소, 통나무집, 비치 하우스, 독특한 숙소 및 체험 - 에어비앤비</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header id="header">
+        <div class="header__notice">
+                <a href="#">에어비앤비의 코로나19 대응 방안에 대한 최신 정보를 확인하세요.</a>
+        </div>
+        <div class="header__nav">
+            <h1 class="header__logo">
+                <a href="#">
+                    <img src="./images/header_logo.png" alt="에어비앤비">
+                </a>
+            </h1>
+            <div class="header__nav__menu">
+                <button type="button" class="header__nav--tab1">숙소</button>
+                <button type="button" class="header__nav--tab2">체험</button>
+                <div class="header__nav--self">
+                    <a href="#">온라인 체험</a>
+                </div>
+            </div>
+            <div class="header__side__menu">
+                <button type="button" class="header__side--self">호스트 되기</button>
+                <button type="button" class="header__side--modal">
+                    <img src="./images/language_icon.png" alt="언어, 화폐 설정">
+                </button>
+                <button type="button" class="header__side--show">
+                    <img src="./images/my-menu_icon.png" alt="내 정보 보기">
+                </button>
+            </div>
+        </div>
+        <div class="header__search">
+            <div class="header__search__bar1">
+                <div class="header__search--show1">
+                    <div>위치</div>
+                    <input type="text" placeholder="어디로 여행가세요?" class="location1">
+                </div>
+                <div class="header__search--show2">
+                    <div>체크인</div>
+                    <div>날짜 입력</div>
+                </div>
+                <div class="header__search--show3">
+                    <div>체크아웃</div>
+                    <div>날짜 입력</div>
+                </div>
+                <div class="header__search--show4">
+                    <div>인원</div>
+                    <div>게스트 추가</div>
+                    <div class="search__btn--search">
+                        <button type="button" class="search__btn--search-icon">
+                            <img src="./images/search_icon.png" alt="검색">
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="header__search__bar2">
+                <button type="button" class="header__search--show1">
+                    <div>위치</div>
+                    <input type="text" placeholder="어디로 여행가세요?" class="location2">
+                </button>
+                <button type="button" class="header__search--show2">
+                    <div>날짜</div><div>원하는 날짜를 입력하세요.</div>
+                </button>
+                <button type="button" class="search__btn--search">
+                    <img src="./images/search_icon.png" alt="검색">
+                </button>
+            </div>
+        </div>
+
+    </header>
+
+    <main id="container">
+        <article class="visual">
+            <div class="visual__contents1">
+                <p class="visual__text">10만 명에 달하는 우크라이나 피란민에게 임시 숙소를 제공해주세요</p>
+                <button type="button" class="visual--blank">자세히 알아보기</button>
+            </div>
+            <div class="visual__contents2">
+                <p class="visual__text">호기심을 자극하는 숙소로 떠나보세요</p>
+                <button type="button" class="visual--self">
+                    <div class="visual--self__text">유연한 검색</div>
+                </button>
+            </div>
+        </article>
+
+        <article class="idea__contents">
+            <h2 class="idea__title">설레는 다음 여행을 위한 아이디어</h2>
+            <ul class="idea">
+                <li class="idea1--self">
+                    <a href="#" class="idea1--link">
+                        <div class="idea1__background"></div>
+                        <p class="idea1__text">
+                            <span>서울</span>
+                            <span>2km 거리</span>
+                        </p>
+                    </a>
+                </li>
+                <li class="idea2--self">
+                    <a href="#" class="idea2--link">
+                        <div class="idea2__background"></div>
+                        <p class="idea2__text">
+                            <span>인천</span>
+                            <span>29km 거리</span>
+                        </p>
+                    </a>        
+                </li>
+                <li class="idea3--self">
+                    <a href="#" class="idea3--link">
+                        <div class="idea3__background"></div>
+                        <p class="idea3__text">
+                            <span>대구</span>
+                            <span>237km 거리</span>
+                        </p>
+                    </a>
+                </li>
+                <li class="idea4--self">
+                    <a href="#" class="idea4--link">
+                        <div class="idea4__background"></div>
+                        <p class="idea4__text">
+                            <span>대전</span>
+                            <span>140km 거리</span>
+                        </p>
+                    </a>
+                </li>
+            </ul>
+        </article>
+
+        <article class="experience__contents">
+            <h2 class="experience__title">에어비앤비 체험 둘러보기</h2>
+            <div class="experience1_wrap">
+                <div class="experience1">
+                    <p class="experience1__text">여행 중 만나는<br>이색적인 즐길 거리</p>
+                    <button type="button" class="experience1--self">체험</button>
+                </div>
+                <div class="experience2">
+                    <p class="experience2__text">집에서 만나는<br>다양한 즐길 거리</p>
+                    <button type="button" class="experience2--self">온라인 체험</button>
+                </div>
+            </div>
+        </article>
+
+        <article class="hosting__wrap">
+            <div class="hosting">
+                <p class="hosting__text">호스팅에 관해<br>궁금하신 점이<br>있나요?</p>
+                <button type="button" class="hosting--self">슈퍼호스트에게 물어보세요</button>
+            </div>
+        </article>
+    </main>
+
+    <footer id="footer">
+        <article class="footer__nav">
+            <div class="footer__nav1">
+                <h3 class="footer__nav1__title">에어비앤비 지원</h3>
+                <ul class="footer__nav1__menu">
+                    <li class="footer__nav--self">
+                        <a href="#">도움말 센터</a>
+                    </li>
+                    <li class="footer__nav--self">
+                        <a href="#">안전 정보</a>
+                    </li>
+                    <li class="footer__nav--self">
+                        <a href="#">예약 취소 옵션</a>
+                    </li>
+                    <li class="footer__nav--self">
+                        <a href="#">에어비앤비의 코로나19 대응 방안</a>
+                    </li>
+                    <li class="footer__nav--self">
+                        <a href="#">장애인 지원</a>
+                    </li>
+                    <li class="footer__nav--self">
+                        <a href="#">이웃 민원 신고</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__nav2">
+                <h3 class="footer__nav2__title">커뮤니티</h3>
+                <ul class="footer__nav2__menu">
+                    <li class="footer__nav--self">
+                        <a href="#">Airbnb.org: 재난 구호 숙소</a>
+                    </li>
+                    <li class="footer__nav--self">
+                        <a href="#">아프간 난민 지원</a>
+                    </li>
+                    <li class="footer__nav--self">
+                        <a href="#">차별 철폐를 위한 노력</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__nav3">
+                <h3 class="footer__nav3__title">호스팅</h3>
+                <ul class="footer__nav3__menu">
+                    <li class="footer__nav--self">
+                        <a href="#">호스팅 시작하기</a>
+                    </li>
+                    <li class="footer__nav--self">
+                        <a href="#">에어커버: 호스트를 위한 보호 프로그램</a>
+                    </li>
+                    <li class="footer__nav--self">
+                        <a href="#">호스팅 자료 둘러보기</a>
+                    </li>
+                    <li class="footer__nav--self">
+                        <a href="#">커뮤니티 포럼 방문하기</a>
+                    </li>
+                    <li class="footer__nav--self">
+                        <a href="#">책임감 있는 호스팅</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__nav4">
+                <h3 class="footer__nav4__title">소개</h3>
+                <ul class="footer__nav4__menu">
+                    <li class="footer__nav--self">
+                        <a href="#">뉴스룸</a>
+                    </li>
+                    <li class="footer__nav--self">
+                        <a href="#">새로운 기능에 대해 알아보기</a>
+                    </li>
+                    <li class="footer__nav--self">
+                        <a href="#">에어비앤비 공동창업자의 메세지</a>
+                    </li>
+                    <li class="footer__nav--self">
+                        <a href="#">채용정보</a>
+                    </li>
+                    <li class="footer__nav--self">
+                        <a href="#">투자자 정보</a>
+                    </li>
+                    <li class="footer__nav--self">
+                        <a href="#">에어비앤비 Luxe</a>
+                    </li>
+                </ul>
+            </div>
+        </article>
+        <article class="footer__bottom">
+            <div class="footer__bottom__copyright">© 2022 Airbnb, Inc.</div>
+            <ul>
+                <li class="copyright--self">
+                    <span>·</span>
+                    <a href="#">개인정보 처리방침</a>
+                </li>
+                <li class="copyright--self">
+                    <span>·</span>
+                    <a href="#">이용약관</a>
+                </li>
+                <li class="copyright--self">
+                    <span>·</span>
+                    <a href="#">사이트맵</a>
+                </li>
+                <li class="copyright--self">
+                    <span>·</span>
+                    <a href="#">한국의 변경된 환불 정책</a>
+                </li>
+                <li class="copyright--self">
+                    <span>·</span>
+                    <a href="#">회사 세부정보</a>
+                </li>
+            </ul>
+            <div class="footer__bottom__side">
+                <div class="language">
+                    <button type="button" class="language--modal1">
+                        <img src="./images/language_icon.png" alt="언어 설정">
+                        <span>한국어 (KR)</span>
+                    </button>
+                    <button type="button" class="language--modal2">
+                        <span>￦</span><span>KRW</span>
+                    </button>
+                </div>
+                <div class="sns">
+                    <div class="sns--blank1">
+                        <a href="#" target="_blank">
+                            <img src="./images/facebook_icon.png" alt="에어비앤피 페이스북으로 이동">
+                        </a>
+                    </div>
+                    <div class="sns--blank2">
+                        <a href="#" target="_blank">
+                            <img src="./images/twitter_icon.png" alt="에어비앤피 트위터로 이동">
+                        </a>
+                    </div>
+                    <div class="sns--blank3">
+                        <a href="#" target="_blank">
+                            <img src="./images/instagram_icon.png" alt="에어비앤피 인스타그램으로 이동">
+                        </a>
+                    </div>
+                    <div class="sns--blank4">
+                        <a href="#" target="_blank">
+                            <img src="./images/naver-blog_icon.png" alt="에어비앤피 네이버 블로그로 이동">
+                        </a>
+                    </div>
+                    <div class="sns--blank5">
+                        <a href="#" target="_blank">
+                            <img src="./images/naver-post_icon.png" alt="에어비앤피 네이버 포스트로 이동">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </footer>
+</body>
 </html>
