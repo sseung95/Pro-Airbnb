@@ -1,0 +1,15 @@
+:root {
+  --color-pink: #ff385c;
+  --color-white: #ffffff;
+  --color-black: #222222; /* 기본 검정 글씨 */
+  --color-grey-dark: #717171; /* 기본 회색 글씨 */
+  --color-grey: #b0b0b0;
+  --color-grey-light: #dddddd;
+  --color-grey-light-2: #f7f7f7;
+}
+
+html {
+  /* 1rem = 10px 사용하기 위함 */
+  font-size: 62.5%;
+  font-family: 'Noto Sans KR', 'Roboto', sans-serif;
+}

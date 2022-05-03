@@ -1,0 +1,439 @@
+body > header {
+  height: 8rem;
+}
+body > footer {
+  height: 30rem;
+}
+img {
+  width: 200px;
+}
+
+/* paragraph */
+.heading--1 {
+  font-size: 2.6rem;
+  font-weight: 500;
+}
+.heading--2 {
+  font-size: 2.2rem;
+  font-weight: 500;
+}
+.heading--3 {
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+#main {
+  max-width: 112rem;
+  margin: 0 auto;
+  /* position: relative; */
+}
+#main > div:nth-child(n + 4) {
+  padding: 4.8rem 0;
+}
+#main > div:nth-child(n + 4) {
+  border-top: 1px solid var(--color-grey-light);
+}
+#main .acc-detail > div {
+  padding: 4.8rem 0;
+}
+
+/* 
+  ////////////////////////////////////
+  여러 곳에서 사용 가능 스타일
+  ///////////////////////////////////
+*/
+/* 유저 사진, 이름, 날짜 레이아웃 */
+.user__header {
+  display: flex;
+  align-items: center;
+}
+.user__img-cover {
+  width: 5.6rem;
+  height: 5.6rem;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.user__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* 별점, 후기 스타일 */
+.acc-stars-reviews {
+  font-size: 1.4rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.acc-reviews {
+  font-weight: 500;
+}
+
+/* HIDDEN CLASS */
+.v-hidden {
+  visibility: hidden;
+  height: 0;
+}
+
+/* UTILL */
+.u-underline {
+  text-decoration: underline;
+}
+.u-text-bold {
+  font-weight: 600;
+}
+.u-size-sm {
+  width: 4rem;
+  height: 4rem;
+}
+.u-color-grey {
+  color: var(--color-grey);
+}
+
+/* BUTTON */
+.btn {
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  /* font-size: inherit; */
+  font-size: 1.4rem;
+  color: inherit;
+  text-align: center;
+}
+
+.btn--outline {
+  background-color: #fff;
+  font-size: 1.6rem;
+  font-weight: 500;
+  border: 1px solid var(--color-black);
+  border-radius: 8px;
+  padding: 1.3rem 2.3rem;
+}
+.btn--outline:hover {
+  background-color: var(--color-grey-light-2);
+}
+
+.btn--hover {
+  /* font-size: 1.4rem; */
+  padding: 0.8rem;
+  border-radius: 8px;
+}
+.btn--hover:hover {
+  background-color: var(--color-grey-light-2);
+}
+
+.btn--round {
+  width: 4.8rem;
+  height: 4.8rem;
+  padding: 0.8rem;
+  border-radius: 100px;
+}
+.btn--round:hover {
+  background-color: var(--color-grey-light-2);
+}
+
+.btn--more {
+  font-size: 1.6rem;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0;
+}
+
+.btn--reservation {
+  width: 100%;
+  font-size: 1.6rem;
+  color: var(--color-white);
+  background: linear-gradient(
+    to right,
+    rgb(230, 30, 77) 0%,
+    rgb(227, 28, 95) 50%,
+    rgb(215, 4, 102) 100%
+  );
+  padding: 1.4rem 2.4rem;
+  border-radius: 8px;
+}
+
+/* ICON */
+.icon {
+  fill: currentColor;
+  height: 1.6rem;
+  width: 1.6rem;
+}
+.icon--pink {
+  fill: var(--color-pink);
+  filter: invert(38%) sepia(77%) saturate(4368%) hue-rotate(330deg)
+    brightness(104%) contrast(101%);
+}
+.icon--star {
+  width: 1.4rem;
+  height: 1.4rem;
+}
+.icon--share {
+  stroke: currentcolor;
+  stroke-width: 2;
+}
+.icon--add {
+  fill: none;
+  stroke: currentcolor;
+  stroke-width: 2;
+}
+.icon--more {
+  height: 0.8rem;
+  width: 0.8rem;
+  /* vertical-align: 1px; */
+
+  /* display: block; */
+  fill: none;
+  stroke: currentcolor;
+  stroke-width: 2.8;
+  overflow: visible;
+}
+.icon--bk {
+  height: 2.4rem;
+  width: 2.4rem;
+  fill: currentcolor;
+}
+
+/* 
+  ////////////////////////////////////
+  페이지 스타일
+  ////////////////////////////////////
+*/
+
+/* acc-header (MAIN HEADER) */
+#main .acc-header {
+  padding: 2.4rem 0;
+}
+#main .acc-header .acc-header__content {
+  font-size: 1.4rem;
+  display: flex;
+  justify-content: space-between;
+}
+#main .acc-header .acc-header__content .acc-header__info-cover {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+#main .acc-header .acc-header__content .acc-header__info--super-host,
+#main .acc-header .acc-header__content .acc-header__info--location {
+  color: var(--color-grey);
+}
+#main .acc-header .acc-header__content .acc-header__sub-btns {
+  margin-right: -8px;
+  display: flex;
+}
+
+/* gallary */
+#main .gallery {
+  position: relative;
+  display: grid;
+  gap: 1rem;
+
+  /* TODO:
+  1) columns, rows 크기 변경
+  2) max, min 크기 설정
+  */
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+
+  height: 56rem;
+
+  border-radius: 12px;
+  overflow: hidden;
+}
+#main .gallery .gallery__item.gallery__item--1 {
+  grid-row: 1 / span 2;
+  grid-column: 1 / span 2;
+}
+#main .gallery .gallery__item .gallery__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  vertical-align: bottom;
+  display: block;
+  transition: all 0.4s;
+}
+#main .gallery .gallery__item .gallery__img:hover {
+  cursor: pointer;
+  filter: brightness(85%);
+}
+#main .gallery .gallery__btn {
+  position: absolute;
+  right: 2rem;
+  bottom: 2rem;
+  font-size: 1.4rem;
+  padding: 0.7rem 1.5rem;
+  display: flex;
+  gap: 0.8rem;
+}
+
+/* 숙소 설명 및 예약 */
+.acc-detail-reservation-container {
+  /* padding-top: 4.8rem; */
+  display: flex;
+  justify-content: space-between;
+}
+.acc-detail-reservation-container .acc-detail {
+  width: 58.333333333333336%;
+}
+.acc-detail > div + div {
+  border-top: 1px solid var(--color-grey-light);
+}
+.acc-detail .acc-description > div + div {
+  border-top: 1px solid var(--color-grey-light);
+}
+.acc-detail .acc-description__header {
+  padding-bottom: 2.4rem;
+  display: flex;
+  justify-content: space-between;
+}
+.acc-detail .acc-description__header .acc-description__info-list {
+  display: flex;
+}
+.acc-detail .acc-description__overview {
+  padding: 3.2rem 0;
+}
+.acc-detail .acc-description__overview .acc-description__overview-row {
+  display: flex;
+}
+.acc-detail .acc-description__intro {
+  padding-top: 3.2rem;
+}
+.acc-detail .acc-description__intro .acc-description__intro-txt {
+  /* 6줄 넘어가면 ... 으로 표시 */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 6;
+  -webkit-box-orient: vertical;
+}
+
+/* 숙박 장소 */
+.acc-place {
+}
+
+/* 편의 시설 */
+.acc-facilities {
+}
+.acc-facilities .acc-facilities__list {
+  margin-bottom: 2.4rem;
+  display: grid;
+  row-gap: 1.6rem;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+}
+.acc-facilities .acc-facilities__list .acc-facilities__item {
+  display: flex;
+  align-items: center;
+}
+/* 숙박 날짜 (캘린더) */
+.acc-date {
+}
+.acc-date .acc-date__calendar {
+  /* TODO: 나중에 지우기 */
+  background-color: beige;
+  height: 300px;
+  text-align: center;
+}
+.acc-date .acc-date__calendar-cover .acc-date__btns {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* 예약 */
+.reservation-container {
+  width: 33.33333333333333%;
+  align-self: flex-start;
+  margin-top: 4.8rem;
+  position: sticky;
+  top: 8rem;
+}
+.reservation-container > div + div {
+  margin-top: 2.4rem;
+}
+.reservation-container .reservation-container__content {
+}
+.reservation-container .reservation-container__content .reservation {
+  background-color: beige;
+}
+.reservation-container .reservation-container__text {
+  display: flex;
+  /* gap: 0.8rem; */
+}
+.reservation-container .reservation-container__btn button {
+  /* font-size: 1.4rem; */
+  display: block;
+  margin: 0 auto;
+}
+
+/* 리뷰 */
+.reviews {
+}
+.reviews .reviews__rating-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  column-gap: 8%;
+  row-gap: 1.6rem;
+}
+.reviews .reviews__rating-list .reviews__rating {
+  display: flex;
+  justify-content: space-between;
+}
+.reviews .reviews__review-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+
+/* 호스팅 지역 */
+.map {
+  height: 300px;
+  background-color: beige;
+}
+
+/* 호스트 */
+.host .host__content .host__summary-list {
+  display: flex;
+}
+.host .host__content .warning {
+  display: flex;
+  align-items: center;
+}
+
+/* 알아두어야 할 사항 */
+.things-to-know .things-to-know__content {
+  display: flex;
+  justify-content: space-between;
+}
+.things-to-know
+  .things-to-know__content
+  .things-to-know__list
+  .things-to-know__item {
+  display: flex;
+}
+
+/* 다른 옵션 살펴보기 */
+.other-location-cover {
+  position: absolute;
+  left: 0;
+  right: 0;
+  background-color: var(--color-grey-light-2);
+  border-top: 1px solid var(--color-grey-light);
+}
+.other-location {
+  max-width: 112rem;
+  margin: 0 auto;
+}
+.other-location .other-location__list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+.other-location .other-location__region {
+  display: flex;
+}

@@ -4,11 +4,786 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>빈티하우스 #홍대입구 # 빔프로젝터 #연트럴파크, 경의선책거리공원</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+    <link rel="stylesheet" href="./src/css/common.css">
+    <link rel="stylesheet" href="./src/css/detail.css">
   </head>
   <body>
     <header></header>
-    <main></main>
+
+    <main id="main">
+      <!-- MAIN HEADER -->
+      <header class="acc-header">
+        <h1 class="acc-header__title heading--1">
+          빈티하우스 #홍대입구 # 빔프로젝터 #연트럴파크, 경의선책거리공원
+        </h1>
+
+        <div class="acc-header__content">
+          <div class="acc-header__info-cover">
+            <div class="acc-header__info">
+              <div class="acc-stars-reviews">
+                <div class="acc-stars">
+                  <svg class="icon icon--pink icon--star" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false"><path d="M15.094 1.579l-4.124 8.885-9.86 1.27a1 1 0 0 0-.542 1.736l7.293 6.565-1.965 9.852a1 1 0 0 0 1.483 1.061L16 25.951l8.625 4.997a1 1 0 0 0 1.482-1.06l-1.965-9.853 7.293-6.565a1 1 0 0 0-.541-1.735l-9.86-1.271-4.127-8.885a1 1 0 0 0-1.814 0z" fill-rule="evenodd"></path></svg>
+                  </svg>
+                  <span>4.97 ·</span>
+                </div>
+                <div class="acc-reviews">
+                  <button class="btn u-underline">
+                    후기 307개
+                  </button>
+                </div>
+              </div>
+            </div>
+            <span>·</span>
+            <div class="acc-header__info acc-header__info--super-host">
+              <img
+                class="icon icon--pink"
+                src="/src/images/person.svg"
+                alt="person icon"
+              />
+              <span>슈퍼호스트</span>
+            </div>
+            <span>·</span>
+            <div class="acc-header__info acc-header__info--location">
+              <button class="btn u-underline">동교동, 마포구, 서울, 한국</button>
+            </div>
+          </div>
+
+          <div class="acc-header__sub-btns">
+            <button class="btn btn--hover share-btn">
+              <svg
+                class="icon icon--share"
+                viewBox="0 0 32 32"
+                xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
+                role="presentation"
+                focusable="false"
+              >
+                <g fill="none">
+                  <path d="M27 18v9a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-9"></path>
+                  <path d="M16 3v23V3z"></path>
+                  <path d="M6 13l9.293-9.293a1 1 0 0 1 1.414 0L26 13"></path>
+                </g></svg
+              >
+              <span class="u-underline">공유하기</span>
+            </button>
+            <button class="btn btn--hover add-btn">
+              <svg
+                class="icon icon--add"
+                viewBox="0 0 32 32"
+                xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
+                role="presentation"
+                focusable="false"
+              >
+                <path
+                  d="m16 28c7-4.733 14-10 14-17 0-1.792-.683-3.583-2.05-4.95-1.367-1.366-3.158-2.05-4.95-2.05-1.791 0-3.583.684-4.949 2.05l-2.051 2.051-2.05-2.051c-1.367-1.366-3.158-2.05-4.95-2.05-1.791 0-3.583.684-4.949 2.05-1.367 1.367-2.051 3.158-2.051 4.95 0 7 7 12.267 14 17z"
+                ></path>
+              </svg>
+              <span class="u-underline">저장</span>
+            </button>
+          </div>
+        </div>
+      </header>
+
+      <!-- 숙소 사진 -->
+      <div class="gallery">
+        <figure class="gallery__item gallery__item--1">
+          <img src="/src/images/detail6.webp" alt="" class="gallery__img" />
+        </figure>
+        <figure class="gallery__item gallery__item--2">
+          <img src="/src/images/detail2.jpg" alt="" class="gallery__img" />
+        </figure>
+        <figure class="gallery__item gallery__item--3">
+          <img src="/src/images/detail3.jpg" alt="" class="gallery__img" />
+        </figure>
+        <figure class="gallery__item gallery__item--4">
+          <img src="/src/images/detail4.jpg" alt="" class="gallery__img" />
+        </figure>
+        <figure class="gallery__item gallery__item--5">
+          <img src="/src/images/detail5.jpg" alt="" class="gallery__img" />
+        </figure>
+        <button class="btn btn--outline gallery__btn">
+          <svg
+            viewBox="0 0 16 16"
+            xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true"
+            role="presentation"
+            focusable="false"
+            style="
+              display: block;
+              height: 16px;
+              width: 16px;
+              fill: currentcolor;
+            "
+          >
+            <path
+              d="m3 11.5a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3zm5 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3zm5 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3zm-10-5a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3zm5 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3zm5 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3zm-10-5a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3zm5 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3zm5 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3z"
+              fill-rule="evenodd"
+            ></path></svg
+          >
+          <span>사진 모두 보기</span>
+        </button>
+      </div>
+
+      <!-- 숙소 상세 설명 & 예약 -->
+      <div class="acc-detail-reservation-container">
+
+        <!-- 1. 숙소 상세 설명 -->
+        <div class="acc-detail">
+          <!-- 1) 숙소 설명 -->
+          <div class="acc-description">
+            <div class="acc-description__header">
+              <div class="wrap">
+                <h2 class="acc-description__title v-hidden">호스트 숙소 간단 소개</h2>
+                <div class="heading--2">Gee님이 호스팅하는 집 전체</div>
+                <ul class="acc-description__info-list">
+                  <li class="acc-description__info">
+                    <span>최대 인원 2명</span>
+                  </li>
+                  <li class="acc-description__info">
+                    <span aria-hidden="true"> · </span>
+                    <span>침실 1개</span>
+                  </li>
+                  <li class="acc-description__info">
+                    <span aria-hidden="true"> · </span>
+                    <span>침대 1개</span>
+                  </li>
+                  <li class="acc-description__info">
+                    <span aria-hidden="true"> · </span>
+                    <span>욕실 1개</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="host-img-container">
+                <img class="host-img" src="/src/images/detail5.jpg" alt="host photo">
+              </div>
+            </div>
+            <div class="acc-description__overview">
+
+              <div class="acc-description__overview-row">
+                <div class="icon-cover">
+                  <svg class="icon--bk" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false"><path d="m16 17c3.8659932 0 7 3.1340068 7 7s-3.1340068 7-7 7-7-3.1340068-7-7 3.1340068-7 7-7zm0 2c-2.7614237 0-5 2.2385763-5 5s2.2385763 5 5 5 5-2.2385763 5-5-2.2385763-5-5-5zm9.6666667-18.66666667c1.0543618 0 1.9181651.81587779 1.9945142 1.85073766l.0054858.14926234v6.38196601c0 .70343383-.3690449 1.35080636-.9642646 1.71094856l-.1413082.0779058-9.6666667 4.8333334c-.5067495.2533747-1.0942474.2787122-1.6171466.0760124l-.1717078-.0760124-9.66666666-4.8333334c-.62917034-.3145851-1.04315599-.93418273-1.09908674-1.62762387l-.00648607-.16123049v-6.38196601c0-1.05436179.81587779-1.91816512 1.85073766-1.99451426l.14926234-.00548574zm0 2h-19.33333337v6.38196601l9.66666667 4.83333336 9.6666667-4.83333336z"></path></svg>
+                </div>
+                <div class="wrap">
+                  <p class="heading--3">Gee님은 슈퍼호스트입니다</p>
+                  <p class="u-color-grey">슈퍼호스트는 풍부한 경험과 높은 평점을 자랑하며 게스트가 숙소에서 편안히 머무를 수 있도록 최선을 다하는 호스트입니다.</p>
+                </div>
+              </div>
+
+              <div class="acc-description__overview-row">
+                <div class="icon-cover">
+                  <svg class="icon--bk" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false"><path d="M16 0c6.627 0 12 5.373 12 12 0 6.337-3.814 12.751-11.346 19.257L16 31.82l-1.076-.932C7.671 24.509 4 18.218 4 12 4 5.423 9.397 0 16 0zm0 2C10.504 2 6 6.525 6 12c0 5.44 3.249 11.118 9.831 17.02l.169.149.576-.518c6.178-5.65 9.293-11.092 9.42-16.318L26 12c0-5.523-4.477-10-10-10zm0 5a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6z"></path></svg>
+                </div>
+                <div class="wrap">
+                  <p class="heading--3">훌륭한 숙소 위치</p>
+                  <p class="u-color-grey">순조로운 체크인 과정</p>
+                </div>
+              </div>
+
+              <div class="acc-description__overview-row">
+                <div class="icon-cover">
+                  <svg class="icon--bk" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false"><path d="m16.8438 27.1562-.00005-3.39845-.2608465.0913211c-.9857292.3215073-2.0303948.5116467-3.1127817.5499306l-.4076218.0071983-.2927873-.0037049c-6.03236807-.1528291-10.89442655-5.0148222-11.04725775-11.0472069l-.00370495-.2927882.00370495-.2927873c.1528312-6.03236807 5.01488968-10.89442655 11.04725775-11.04725775l.2927873-.00370495.2927882.00370495c6.0323847.1528312 10.8943778 5.01488968 11.0472069 11.04725775l.0037049.2927873-.00663.3912275c-.0484899 1.4286741-.3615343 2.7917824-.8920452 4.0406989l-.1327748.2963236 7.90645 7.90705v5.5834h-5.5834l-4.12505-4.12545zm-6.5313-19.93745c1.708641 0 3.09375 1.38511367 3.09375 3.09375 0 1.7086436-1.3851064 3.09375-3.09375 3.09375-1.70863633 0-3.09375-1.385109-3.09375-3.09375 0-1.70863365 1.38511635-3.09375 3.09375-3.09375zm0 2.0625c-.56954635 0-1.03125.46170365-1.03125 1.03125 0 .5695521.46169942 1.03125 1.03125 1.03125.5695564 0 1.03125-.4616936 1.03125-1.03125 0-.56955058-.4616979-1.03125-1.03125-1.03125zm12.1147 15.81255 4.12455 4.12495h2.667v-2.667l-8.37295-8.37255.3697-.6775.1603998-.3074798c.56763-1.1397167.90791-2.4128858.9606815-3.761954l.0072187-.3697662-.0038197-.2688703c-.1397418-4.91222958-4.0963692-8.86881961-9.0086094-9.00856l-.2688709-.0038197-.2688703.0038197c-4.91222958.13974039-8.86881961 4.09633042-9.00856 9.00856l-.0038197.2688703.0038197.2688709c.14228112 5.0015536 4.24146819 9.0124291 9.2774303 9.0124291 1.4456308 0 2.8116781-.3298367 4.0293209-.9177001l.3012791-.1522999 1.5131-.7998-.00045 4.61975z"></path></svg>
+                </div>
+                <div class="wrap">
+                  <p class="heading--3">순조로운 체크인 과정</p>
+                  <p class="u-color-grey">최근 숙박한 게스트 중 100%가 체크인 과정에 별점 5점을 준 숙소입니다.</p>
+                </div>
+              </div>
+            </div>
+            <div class="acc-description__intro">
+              <div class="acc-description__intro-txt">
+                안녕하세요! 홍대 빈티하우스입니다~<br>
+                저희 숙소 찾아주셔서 진심으로 감사드립니다. ^^<br>
+                <br>
+                게스트분들께서 특별하고 편안한 날을 보내실 수 있도록<br>
+                정성스럽게 준비해드렸습니다. 좋은 추억 만들고 가시길 바랍니다.^^<br>
+                <br>
+                <span class="heading--3">숙소</span><br>
+                1. LG 초고화질 빔프로젝터 완비<br>
+                넷플릭스, 유튜브, 왓챠, 티빙 앱 탑재 되어있어 핸드폰 노트북과 연결 필요없이 시청가능합니다. ( 이중에서 넷플릭스계정은 제공해드립니다)<br>
+                <br>
+                2. 홍대입구역 4-5분거리<br>
+                <br>
+                3. 연트럴파크, 책거리공원<br>
+                <br>
+                4. 조용한 주택가 위치(소음 걱정x)<br>
+                <br>
+                5. 주변 인싸 맛집 많음( 문의해주시면 체크인인내와 같이 보내드립니다)<br>
+                <br>
+                6. 필카 사진 찍기 좋은 분위기<br>
+                <br>
+                7. 조리도구 및 기본 조미료<br>
+                <br>
+                8. 체크인전 모든 공간에 대한 방역 및 살균처리( 인체에 무해한 소독제 사용)<br>
+                모든 침구류의 커버 세탁 및 살균 건조<br>
+                <br>
+                <br>
+                <br>
+                ⚠️체크인은 오후 3시이후입니다.<br>
+                체크아웃은 오전 11시까지 입니다.<br>
+                <br>
+                ⚠️주차는 불가합니다. 필요하신 분은 주변 공영주차장 이용 부탁드립니다.<br>
+                <span class="heading--3">게스트 이용 가능 공간/시설</span><br>
+                🧸침실<br>
+                퀸사이즈 침대, 소파베드, 빔프로젝터, 블루투스 스피커,무료 와이파이, 지상파tv 가능<br>
+                <br>
+                🛁화장실<br>
+                칫솔, 비누, 치약, 바디워시 린스 샴푸, 판고데기, 헤어드라이기, 롤빗, 면봉, 화장숨, 머리끈, 수건<br>
+                <br>
+                🍽주방<br>
+                간장 후추 설탕 소금 식용유, 요리도구, 냉장고,전자 레인지, 전기 드립포트,와인잔,냄비, 후라이펜<br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                * Bedroom: beam projectors, sofa, kettle,books, lights, etc.<br>
+                <br>
+                * Kitchen: gas range, refrigerator, microwave, Kitchen utensils(pans, pots, plates, bowls, etc.)<br>
+                <br>
+                * Toilet: shampoo, hair conditioner, body wash, toilet paper, soap, towels.<br>
+                <br>
+                * High-speed internet access by wifi<br>
+                <br>
+                * Air conditioner, floor heating system, washing machine, speaker, hair drier, hair curler, extra blanket, etc.<br>
+              </div>
+              <button class="btn btn--more">
+                <span class="u-underline">더보기</span>
+                <svg class="icon--more" viewBox="0 0 18 18" role="presentation" aria-hidden="true" focusable="false"><path d="m4.29 1.71a1 1 0 1 1 1.42-1.41l8 8a1 1 0 0 1 0 1.41l-8 8a1 1 0 1 1 -1.42-1.41l7.29-7.29z" fill-rule="evenodd"></path></svg>
+              </button>
+            </div>
+          </div>
+
+          <!-- 2) 숙박 장소 -->
+          <div class="acc-place">
+            <h2 class="heading--2">숙박장소</h2>
+            <div class="acc-place__content">
+              <div class="acc-place__img-cover">
+                <img src="/src/images/detail.jpg" alt="place photo" class="acc-place__img" />
+              </div>
+              <div class="acc-place__description">
+                <p class="heading--3">침실</p>
+                <p>퀸사이즈 침대 1개</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3) 숙소 편의시설 -->
+          <div class="acc-facilities">
+            <h2 class="heading--2">숙소 편의시설</h2>
+            <div class="acc-facilities__content">
+              <ul class="acc-facilities__list">
+                <li class="acc-facilities__item">
+                  <div class="icon-cover">
+                    <svg class="icon--bk" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false"><path d="M26 1a5 5 0 0 1 5 5c0 6.389-1.592 13.187-4 14.693V31h-2V20.694c-2.364-1.478-3.942-8.062-3.998-14.349L21 6l.005-.217A5 5 0 0 1 26 1zm-9 0v18.118c2.317.557 4 3.01 4 5.882 0 3.27-2.183 6-5 6s-5-2.73-5-6c0-2.872 1.683-5.326 4-5.882V1zM2 1h1c4.47 0 6.934 6.365 6.999 18.505L10 21H3.999L4 31H2zm14 20c-1.602 0-3 1.748-3 4s1.398 4 3 4 3-1.748 3-4-1.398-4-3-4zM4 3.239V19h3.995l-.017-.964-.027-.949C7.673 9.157 6.235 4.623 4.224 3.364l-.12-.07zm19.005 2.585L23 6l.002.31c.045 4.321 1.031 9.133 1.999 11.39V3.17a3.002 3.002 0 0 0-1.996 2.654zm3.996-2.653v14.526C27.99 15.387 29 10.4 29 6a3.001 3.001 0 0 0-2-2.829z"></path></svg>
+                  </div>
+                  <span>주방</span>
+                </li>
+
+                <li class="acc-facilities__item">
+                  <div class="icon-cover">
+                    <svg class="icon--bk" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false"><path d="m15.9999 20.33323c2.0250459 0 3.66667 1.6416241 3.66667 3.66667s-1.6416241 3.66667-3.66667 3.66667-3.66667-1.6416241-3.66667-3.66667 1.6416241-3.66667 3.66667-3.66667zm0 2c-.9204764 0-1.66667.7461936-1.66667 1.66667s.7461936 1.66667 1.66667 1.66667 1.66667-.7461936 1.66667-1.66667-.7461936-1.66667-1.66667-1.66667zm.0001-7.33323c3.5168171 0 6.5625093 2.0171251 8.0432368 4.9575354l-1.5143264 1.5127043c-1.0142061-2.615688-3.5549814-4.4702397-6.5289104-4.4702397s-5.5147043 1.8545517-6.52891042 4.4702397l-1.51382132-1.5137072c1.48091492-2.939866 4.52631444-4.9565325 8.04273174-4.9565325zm.0001-5.3332c4.9804693 0 9.3676401 2.540213 11.9365919 6.3957185l-1.4470949 1.4473863c-2.1746764-3.5072732-6.0593053-5.8431048-10.489497-5.8431048s-8.31482064 2.3358316-10.48949703 5.8431048l-1.44709488-1.4473863c2.56895177-3.8555055 6.95612261-6.3957185 11.93659191-6.3957185zm-.0002-5.3336c6.4510616 0 12.1766693 3.10603731 15.7629187 7.9042075l-1.4304978 1.4309874c-3.2086497-4.44342277-8.4328305-7.3351949-14.3324209-7.3351949-5.8991465 0-11.12298511 2.89133703-14.33169668 7.334192l-1.43047422-1.4309849c3.58629751-4.79760153 9.31155768-7.9032071 15.7621709-7.9032071z"></path></svg>
+                  </div>
+                  <span>무선 인터넷</span>
+                </li>
+
+                <li class="acc-facilities__item">
+                  <div class="icon-cover">
+                    <svg class="icon--bk" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" ><path d="M9 29v-2h2v-2H6a5 5 0 0 1-4.995-4.783L1 20V8a5 5 0 0 1 4.783-4.995L6 3h20a5 5 0 0 1 4.995 4.783L31 8v12a5 5 0 0 1-4.783 4.995L26 25h-5v2h2v2zm10-4h-6v2h6zm7-20H6a3 3 0 0 0-2.995 2.824L3 8v12a3 3 0 0 0 2.824 2.995L6 23h20a3 3 0 0 0 2.995-2.824L29 20V8a3 3 0 0 0-2.824-2.995z"></path></svg>
+                  </div>
+                  <span>TV</span>
+                </li>
+
+                <li class="acc-facilities__item">
+                  <div class="icon-cover">
+                    <svg class="icon--bk" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" ><path d="M28 2a2 2 0 0 1 1.995 1.85L30 4v24a2 2 0 0 1-1.85 1.995L28 30H4a2 2 0 0 1-1.995-1.85L2 28V4a2 2 0 0 1 1.85-1.995L4 2zm0 2H4v24h24zM16 7a9 9 0 1 1 0 18 9 9 0 0 1 0-18zm-5.841 7.5c-.342 0-.68.024-1.014.073a7 7 0 0 0 13.107 4.58 8.976 8.976 0 0 1-6.91-2.374l-.236-.23a6.966 6.966 0 0 0-4.947-2.049zM16 9a6.997 6.997 0 0 0-6.066 3.504l.225-.004c2.262 0 4.444.844 6.124 2.407l.237.229a6.979 6.979 0 0 0 4.948 2.05c.493 0 .98-.05 1.456-.151A7 7 0 0 0 16 9zM7 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"></path></svg>
+                  </div>
+                  <span>세탁기</span>
+                </li>
+
+                <li class="acc-facilities__item">
+                  <div class="icon-cover">
+                    <svg class="icon--bk" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" ><path d="M17 1v4.03l4.026-2.324 1 1.732L17 7.339v6.928l6-3.464V5h2v4.648l3.49-2.014 1 1.732L26 11.381l4.026 2.325-1 1.732L24 12.535l-6 3.464 6 3.465 5.026-2.902 1 1.732L26 20.618l3.49 2.016-1 1.732L25 22.351V27h-2v-5.804l-6-3.465v6.929l5.026 2.902-1 1.732L17 26.97V31h-2v-4.031l-4.026 2.325-1-1.732L15 24.66v-6.929l-6 3.464V27H7v-4.65l-3.49 2.016-1-1.732 3.489-2.016-4.025-2.324 1-1.732 5.025 2.901 6-3.464-6-3.464-5.025 2.903-1-1.732L6 11.38 2.51 9.366l1-1.732L7 9.648V5h2v5.803l6 3.464V7.339L9.974 4.438l1-1.732L15 5.03V1z"></path></svg>
+                  </div>
+                  <span>에어컨</span>
+                </li>
+
+                <li class="acc-facilities__item">
+                  <div class="icon-cover">
+                    <svg class="icon--bk" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" ><path d="M30 29v2H2v-2zM20 1a2 2 0 0 1 1.995 1.85L22 3v2h3a5 5 0 0 1 4.995 4.783L30 10v12a5 5 0 0 1-4.783 4.995L25 27H7a5 5 0 0 1-4.995-4.783L2 22V10a5 5 0 0 1 4.783-4.995L7 5h3V3a2 2 0 0 1 1.85-1.995L12 1zm5 6H7a3 3 0 0 0-2.995 2.824L4 10v12a3 3 0 0 0 2.824 2.995L7 25h18a3 3 0 0 0 2.995-2.824L28 22V10a3 3 0 0 0-3-3zm-8 2v9.5l3.293-3.293 1.414 1.414-4.646 4.647-.114.103a1.5 1.5 0 0 1-1.894 0l-.114-.103-4.646-4.647 1.414-1.414L15 18.5V9zm3-6h-8v2h8z"></path></svg>
+                  </div>
+                  <span>여행 가방 보관 가능</span>
+                </li>
+
+                <li class="acc-facilities__item">
+                  <div class="icon-cover">
+                    <svg class="icon--bk" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" ><path d="M14 27l-.005.2a4 4 0 0 1-3.789 3.795L10 31H4v-2h6l.15-.005a2 2 0 0 0 1.844-1.838L12 27zM10 1c.536 0 1.067.047 1.58.138l.38.077 17.448 3.64a2 2 0 0 1 1.585 1.792l.007.166v6.374a2 2 0 0 1-1.431 1.917l-.16.04-13.554 2.826 1.767 6.506a2 2 0 0 1-1.753 2.516l-.177.008H11.76a2 2 0 0 1-1.879-1.315l-.048-.15-1.88-6.769A9 9 0 0 1 10 1zm5.692 24l-1.799-6.621-1.806.378a8.998 8.998 0 0 1-1.663.233l-.331.008L11.76 25zM10 3a7 7 0 1 0 1.32 13.875l.331-.07L29 13.187V6.813L11.538 3.169A7.027 7.027 0 0 0 10 3zm0 2a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6z"></path></svg>
+                  </div>
+                  <span>헤어드라이어</span>
+                </li>
+
+                <li class="acc-facilities__item">
+                  <div class="icon-cover">
+                    <svg class="icon--bk" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" ><path d="M25 1a2 2 0 0 1 1.995 1.85L27 3v26a2 2 0 0 1-1.85 1.995L25 31H7a2 2 0 0 1-1.995-1.85L5 29V3a2 2 0 0 1 1.85-1.995L7 1zm0 10H7v18h18zm-15 2a1 1 0 1 1 0 2 1 1 0 0 1 0-2zM25 3H7v6h18zM10 5a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"></path></svg>
+                  </div>
+                  <span>냉장고</span>
+                </li>
+
+                <li class="acc-facilities__item">
+                  <div class="icon-cover">
+                    <svg class="icon--bk" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" ><path d="M29 3a2 2 0 0 1 1.995 1.85L31 5v22a2 2 0 0 1-1.85 1.995L29 29H3a2 2 0 0 1-1.995-1.85L1 27V5a2 2 0 0 1 1.85-1.995L3 3zm0 2H3v22h26zm-6 2v18H5V7zm-2 2H7v14l3 .001a4.975 4.975 0 0 1-.992-2.721L9 20v-3h10v3a4.978 4.978 0 0 1-1 3.001L21 23zm-4 10h-6v1a3 3 0 0 0 2.65 2.98l.174.015L14 23a3 3 0 0 0 2.995-2.824L17 20zm9-8a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm0-4a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"></path></svg>
+                  </div>
+                  <span>전자레인지</span>
+                </li>
+
+                <li class="acc-facilities__item">
+                  <div class="icon-cover">
+                    <svg class="icon--bk" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" style="display: block; height: 24px; width: 24px; fill: currentcolor;"><path d="M26 2a1 1 0 0 1 .922.612l.04.113 2 7a1 1 0 0 1-.847 1.269L28 11h-3v5h6v2h-2v13h-2l.001-2.536a3.976 3.976 0 0 1-1.73.527L25 29H7a3.982 3.982 0 0 1-2-.535V31H3V18H1v-2h5v-4a1 1 0 0 1 .883-.993L7 11h.238L6.086 8.406l1.828-.812L9.427 11H12a1 1 0 0 1 .993.883L13 12v4h10v-5h-3a1 1 0 0 1-.987-1.162l.025-.113 2-7a1 1 0 0 1 .842-.718L22 2h4zm1 16H5v7a2 2 0 0 0 1.697 1.977l.154.018L7 27h18a2 2 0 0 0 1.995-1.85L27 25v-7zm-16-5H8v3h3v-3zm14.245-9h-2.491l-1.429 5h5.349l-1.429-5z"></path></svg>
+                  </div>
+                  <span>업무 전용 공간</span>
+                </li>
+              </ul>
+              <button class="btn btn--outline acc-facilities__btn">편의시설 27개 모두 보기</button>
+            </div>
+          </div>
+
+          <!-- 4) 숙박일 -->
+          <div class="acc-date">
+            <h2 class="acc-date__title v-hidden">숙박 날짜</h2>
+            <div class="heading--2">동교동, 마포구에서 1박</div>
+            <p class="acc-date__date">2022년 5월 18일 - 2022년 5월 19일</p>
+            <div class="acc-date__calendar-cover">
+              <div class="acc-date__calendar">
+                달력 있을 곳!!
+              </div>
+              <div class="acc-date__btns">
+                <button class="btn btn--round acc-date__btn">
+                  <svg class="icon--bk" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false"><path d="M29 5a2 2 0 0 1 1.995 1.85L31 7v18a2 2 0 0 1-1.85 1.995L29 27H3a2 2 0 0 1-1.995-1.85L1 25V7a2 2 0 0 1 1.85-1.995L3 5zm0 2H3v18h26zm-8 13v2H11v-2zm3-5a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm-4 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm-4 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm-4 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm-4 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm16-4a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm-4 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm-4 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm-4 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm-4 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"></path></svg>
+                </button>
+                <button class="btn btn--hover u-underline acc-date__btn">날짜 지우기</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. 예약 -->
+        <div class="reservation-container">
+          <div class="reservation-container__content">
+            <div class="reservation">
+              <form action="/" class="reservation__form">
+                <div class="reservation__summary">
+                  <div class="reservation__summary-price">
+                    <span>₩80,000</span>
+                    <span>/ 박</span>
+                  </div>
+                  <div class="acc-stars-reviews">
+                    <div class="header__info acc-stars">
+                      <svg class="icon icon--pink icon--star" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false"><path d="M15.094 1.579l-4.124 8.885-9.86 1.27a1 1 0 0 0-.542 1.736l7.293 6.565-1.965 9.852a1 1 0 0 0 1.483 1.061L16 25.951l8.625 4.997a1 1 0 0 0 1.482-1.06l-1.965-9.853 7.293-6.565a1 1 0 0 0-.541-1.735l-9.86-1.271-4.127-8.885a1 1 0 0 0-1.814 0z" fill-rule="evenodd"></path></svg>
+                      </svg>
+                      <span>4.97</span>
+                    </div>
+                    <div class="header__info acc-reviews">
+                      <button class="btn u-underline">후기 307개</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="reservation__option-cover">
+                  <div class="reservation__option reservation__option--check-in">
+                    <div>체크인</div>
+                    <div>2022. 5. 8</div>
+                  </div>
+                  <div class="reservation__option reservation__option--check-out">
+                    <div>체크아웃</div>
+                    <div>2022. 5. 9</div>
+                  </div>
+                  <div class="reservation__option reservation__option--guest">
+                    <div>인원</div>
+                    <div>게스트 2명</div>
+                  </div>
+                </div>
+                <button class="btn btn--reservation">예약하기</button>
+              </form>
+              <p>예약 확정 전에는 요금이 청구되지 않습니다.</p>
+              <ol class="reservation__price-list">
+                <li class="reservation__price">
+                  <span>₩80,000 x 1박</span>
+                  <span>₩80,000</span>
+                </li>
+                <li class="reservation__price">
+                  <span>청소비</span>
+                  <span>₩25,000</span>
+                </li>
+                <li class="reservation__price">
+                  <span>서비스 수수료</span>
+                  <span>₩14,824</span>
+                </li>
+                <li class="reservation__price">
+                  <span>숙박세와 수수료</span>
+                  <span>₩1,482</span>
+                </li>
+                <li class="reservation__price reservation__price--total">
+                  <span>총 합계</span>
+                  <span>₩121,306</span>
+                </li>
+              </ol>
+            </div>
+          </div>
+          <div class="reservation-container__text">
+            <p><span class="u-text-bold">흔치 않은 기회입니다.</span> Gee님의 에어비앤비 숙소는 보통 예약이 가득 차 있습니다.</p>
+            <img class="u-size-sm" src="https://a0.muscache.com/airbnb/static/packages/assets/frontend/gp-pdp-core-ui-sections/images/stays/icon-uc-diamond.296a9c250dc9ee3d995629f834798cb1.gif" alt="">
+          </div>
+          <div class="reservation-container__btn u-color-grey">
+            <button class="btn">
+              <svg class="icon" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false"><path d="M28 6H17V4a2 2 0 0 0-2-2H3v28h2V18h10v2a2 2 0 0 0 2 2h11l.115-.006a1 1 0 0 0 .847-1.269L27.039 14l1.923-6.724A1 1 0 0 0 28 6z"></path></svg>
+              <span class="u-underline">숙소 신고하기</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- 후기 -->
+      <div class="reviews">
+        <h2 class="reviews__title v-hidden">후기</h2>
+        <div class="heading--2">
+          <div class="acc-stars-reviews">
+            <div class="header__info acc-stars">
+              <svg class="icon icon--pink icon--star" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false"><path d="M15.094 1.579l-4.124 8.885-9.86 1.27a1 1 0 0 0-.542 1.736l7.293 6.565-1.965 9.852a1 1 0 0 0 1.483 1.061L16 25.951l8.625 4.997a1 1 0 0 0 1.482-1.06l-1.965-9.853 7.293-6.565a1 1 0 0 0-.541-1.735l-9.86-1.271-4.127-8.885a1 1 0 0 0-1.814 0z" fill-rule="evenodd"></path></svg>
+              </svg>
+              <span>4.97</span>
+            </div>
+            <div class="header__info acc-reviews">
+              <button class="btn u-underline">후기 307개</button>
+            </div>
+          </div>
+        </div>
+        <ul class="reviews__rating-list">
+          <li class="reviews__rating">
+            <div>청결도</div>
+            <div>
+              <span>막대 부분...</span>
+              <span>4.9</span>
+            </div>
+          </li>
+          <li class="reviews__rating">
+            <div>청결도</div>
+            <div>
+              <span>막대 부분...</span>
+              <span>4.9</span>
+            </div>
+          </li>
+          <li class="reviews__rating">
+            <div>청결도</div>
+            <div>
+              <span>막대 부분...</span>
+              <span>4.9</span>
+            </div>
+          </li>
+          <li class="reviews__rating">
+            <div>청결도</div>
+            <div>
+              <span>막대 부분...</span>
+              <span>4.9</span>
+            </div>
+          </li>
+          <li class="reviews__rating">
+            <div>청결도</div>
+            <div>
+              <span>막대 부분...</span>
+              <span>4.9</span>
+            </div>
+          </li>
+          <li class="reviews__rating">
+            <div>청결도</div>
+            <div>
+              <span>막대 부분...</span>
+              <span>4.9</span>
+            </div>
+          </li>
+        </ul>
+        <ul class="reviews__review-list">
+          <li class="reviews__review review-el">
+            <div class="user__header">
+              <div class="user__img-cover">
+                <img class="user__img" src="/src/images/detail5.jpg" alt="">
+              </div>
+              <div class="user__info">
+                <div class="user__name">영훈</div>
+                <div class="user__date">2022년 4월</div>
+              </div>
+            </div>
+            <div class="review-el__content">
+              따뜻한 인테리어와 분위기<br>
+              청결한 관리<br>
+              역이랑 가까워서 좋았어요 :)
+            </div>
+          </li>
+          <li class="reviews__review review-el">
+            <div class="user__header">
+              <div class="user__img-cover">
+                <img class="user__img" src="/src/images/detail5.jpg" alt="">
+              </div>
+              <div class="user__info">
+                <div class="user__name">영훈</div>
+                <div class="user__date">2022년 4월</div>
+              </div>
+            </div>
+            <div class="review-el__content">
+              따뜻한 인테리어와 분위기<br>
+              청결한 관리<br>
+              역이랑 가까워서 좋았어요 :)
+            </div>
+          </li>
+          <li class="reviews__review review-el">
+            <div class="user__header">
+              <div class="user__img-cover">
+                <img class="user__img" src="/src/images/detail5.jpg" alt="">
+              </div>
+              <div class="user__info">
+                <div class="user__name">영훈</div>
+                <div class="user__date">2022년 4월</div>
+              </div>
+            </div>
+            <div class="review-el__content">
+              따뜻한 인테리어와 분위기<br>
+              청결한 관리<br>
+              역이랑 가까워서 좋았어요 :)
+            </div>
+          </li>
+          <li class="reviews__review review-el">
+            <div class="user__header">
+              <div class="user__img-cover">
+                <img class="user__img" src="/src/images/detail5.jpg" alt="">
+              </div>
+              <div class="user__info">
+                <div class="user__name">영훈</div>
+                <div class="user__date">2022년 4월</div>
+              </div>
+            </div>
+            <div class="review-el__content">
+              따뜻한 인테리어와 분위기<br>
+              청결한 관리<br>
+              역이랑 가까워서 좋았어요 :)
+            </div>
+          </li>
+          <li class="reviews__review review-el">
+            <div class="user__header">
+              <div class="user__img-cover">
+                <img class="user__img" src="/src/images/detail5.jpg" alt="">
+              </div>
+              <div class="user__info">
+                <div class="user__name">영훈</div>
+                <div class="user__date">2022년 4월</div>
+              </div>
+            </div>
+            <div class="review-el__content">
+              따뜻한 인테리어와 분위기<br>
+              청결한 관리<br>
+              역이랑 가까워서 좋았어요 :)
+            </div>
+          </li>
+          <li class="reviews__review review-el">
+            <div class="user__header">
+              <div class="user__img-cover">
+                <img class="user__img" src="/src/images/detail5.jpg" alt="">
+              </div>
+              <div class="user__info">
+                <div class="user__name">영훈</div>
+                <div class="user__date">2022년 4월</div>
+              </div>
+            </div>
+            <div class="review-el__content">
+              따뜻한 인테리어와 분위기<br>
+              청결한 관리<br>
+              역이랑 가까워서 좋았어요 :)
+            </div>
+            <button class="btn btn--more">
+              <span class="u-underline">더보기</span>
+              <svg class="icon--more" viewBox="0 0 18 18" role="presentation" aria-hidden="true" focusable="false"><path d="m4.29 1.71a1 1 0 1 1 1.42-1.41l8 8a1 1 0 0 1 0 1.41l-8 8a1 1 0 1 1 -1.42-1.41l7.29-7.29z" fill-rule="evenodd"></path></svg>
+            </button>
+          </li>
+        </ul>
+        <button class="btn--outline">후기 308개 모두 보기</button>
+      </div>
+
+      <!-- 지역 -->
+      <div class="acc-location">
+        <h2 class="acc-location__title heading--2">호스팅 지역</h2>
+        <div class="acc-location__content">
+          <div class="map">
+            지도 있을 공간!
+          </div>
+          <div class="acc-location__description">
+            <div class="acc-location__location">동교동, 마포구, 서울, 한국</div>
+            <p class="acc-location__txt">Hongdae is one of Seoul’s most popular attractions, full of energy and art. There are many young people. There is a street performance every night. Hongdae led the fashion of young Koreans. There are many famous coffee shops around, TV shows, and many restaurants, bars and nightclubs. There are also shopping malls. And you can still see artists.</p>
+          </div>
+          <button class="btn btn--more">
+            <span class="u-underline">더보기</span>
+            <svg class="icon--more" viewBox="0 0 18 18" role="presentation" aria-hidden="true" focusable="false"><path d="m4.29 1.71a1 1 0 1 1 1.42-1.41l8 8a1 1 0 0 1 0 1.41l-8 8a1 1 0 1 1 -1.42-1.41l7.29-7.29z" fill-rule="evenodd"></path></svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- 호스트 정보 -->
+      <div class="host">
+        <h2 class="v-hidden">호스트 정보</h2>
+        
+        <div class="user__header">
+          <div class="user__img-cover">
+            <img class="user__img" src="/src/images/detail5.jpg" alt="">
+          </div>
+          <div class="user__info">
+            <div class="user__name">호스트: Gee님</div>
+            <div class="user__date">회원 가입일: 2019년 2월</div>
+          </div>
+        </div>
+
+        <div class="host__content">
+          <ul class="host__summary-list">
+            <li class="host__summary">
+              <svg class="icon icon--pink" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false"><path d="M15.094 1.579l-4.124 8.885-9.86 1.27a1 1 0 0 0-.542 1.736l7.293 6.565-1.965 9.852a1 1 0 0 0 1.483 1.061L16 25.951l8.625 4.997a1 1 0 0 0 1.482-1.06l-1.965-9.853 7.293-6.565a1 1 0 0 0-.541-1.735l-9.86-1.271-4.127-8.885a1 1 0 0 0-1.814 0z" fill-rule="evenodd"></path></svg>
+              <span>후기 837개</span>
+            </li>
+            <li class="host__summary">
+              <svg class="icon icon--pink" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false"><path d="M16 .798l.555.37C20.398 3.73 24.208 5 28 5h1v12.5C29 25.574 23.21 31 16 31S3 25.574 3 17.5V5h1c3.792 0 7.602-1.27 11.445-3.832L16 .798zm7 9.08l-9.5 9.501-4.5-4.5L6.879 17l6.621 6.621L25.121 12 23 9.879z"></path></svg>
+              <span>본인 인증 완료</span>
+            </li>
+            <li class="host__summary">
+              <img
+                class="icon icon--pink"
+                src="/src/images/person.svg"
+                alt="person icon"
+              />
+              <span>슈퍼호스트</span>
+            </li>
+          </ul>
+          <div class="host__comm">
+            <div>숙박 중 게스트와의 교류</div>
+            <p>all time
+              If you need anything, please let me know. I am willing to help you as much as possible. And I can speak English, Korean, Chinese, and a little Japanese. My home is very close to here. If there is any problem, I can go there to help you.</p>
+          </div>
+          <div class="host__super-host">
+            <div>Gee님은 슈퍼호스트입니다.</div>
+            <p>슈퍼호스트는 풍부한 경험과 높은 평점을 자랑하며 게스트가 숙소에서 편안히 머무를 수 있도록 최선을 다하는 호스트입니다.</p>
+          </div>
+          <div class="host__response">
+            <div>응답률: 100%</div>
+            <div>응답 시간: 1시간 이내</div>
+          </div>
+          <button class="btn btn--outline">호스트에게 연락하기</button>
+          <div class="warning">
+            <svg viewBox="0 0 24 24" role="presentation" aria-hidden="true" focusable="false" style="height: 24px; width: 24px; display: block; fill: rgb(255, 180, 0);"><path d="m5 20.5a.5.5 0 0 1 -.5.5h-.5v.5a.5.5 0 0 1 -1 0v-.5h-.5a.5.5 0 0 1 0-1h .5v-.5a.5.5 0 0 1 1 0v .5h.5a.5.5 0 0 1 .5.5zm1.5 1.5a.5.5 0 1 0 .5.5.5.5 0 0 0 -.5-.5zm16-20h-.5v-.5a.5.5 0 0 0 -1 0v .5h-.5a.5.5 0 0 0 0 1h .5v.5a.5.5 0 0 0 1 0v-.5h.5a.5.5 0 0 0 0-1zm-2.58 4.87a13.41 13.41 0 0 1 -6.76-3.2.37.37 0 0 0 -.63.26l.08 16.22a.38.38 0 0 0 .55.32 11.98 11.98 0 0 0 7.07-13.31.37.37 0 0 0 -.31-.3z"></path><path d="m14.39 8.32a1.93 1.93 0 0 0 -3.66 0l-2.42 4.85a3.09 3.09 0 0 0 -.4 1.61 2.36 2.36 0 0 0 2.23 2.23 3.95 3.95 0 0 0 2.42-1.06 3.95 3.95 0 0 0 2.42 1.06 2.36 2.36 0 0 0 2.23-2.23 3.09 3.09 0 0 0 -.4-1.61zm-2.72 4.38c0-.05.01-1.23.89-1.23s.88 1.18.88 1.23a3.25 3.25 0 0 1 -.88 1.83 3.25 3.25 0 0 1 -.89-1.83zm3.31 3.31a2.92 2.92 0 0 1 -1.71-.77 4.3 4.3 0 0 0 1.17-2.54 2.02 2.02 0 0 0 -1.8-2.22l-.08-.01a2.02 2.02 0 0 0 -1.89 2.15l.01.08a4.29 4.29 0 0 0 1.17 2.54 2.92 2.92 0 0 1 -1.71.77 1.36 1.36 0 0 1 -1.23-1.23 2.13 2.13 0 0 1 .29-1.16l2.42-4.85c.33-.65.55-.76.94-.76s.61.11.94.76l2.42 4.85a2.13 2.13 0 0 1 .29 1.16 1.36 1.36 0 0 1 -1.23 1.23zm7.01-10.35a.5.5 0 0 0 -.43-.4 13.03 13.03 0 0 1 -8.68-4.57.52.52 0 0 0 -.77 0 13.03 13.03 0 0 1 -8.68 4.57.5.5 0 0 0 -.43.4c-1.58 8.19 1.55 14.02 9.3 17.31a.5.5 0 0 0 .39 0c7.75-3.29 10.87-9.11 9.3-17.31zm-9.49 16.3c-7.1-3.09-9.91-8.25-8.57-15.76a13.98 13.98 0 0 0 8.57-4.43 13.98 13.98 0 0 0 8.57 4.43c1.33 7.51-1.48 12.67-8.57 15.76z" fill="#484848"></path></svg>
+            <span>안전한 결제를 위해 에어비앤비 웹사이트나 앱 외부에서 송금하거나 대화를 나누지 마세요.</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 알아두어야 할 사항 -->
+      <div class="things-to-know">
+        <h2 class="heading--2">알아두어야 할 사항</h2>
+        <div class="things-to-know__content">
+          <div class="things-to-know__col">
+            <h3 class="things-to-know__title heading--3">숙소 이용규칙</h3>
+            <ul class="things-to-know__list">
+              <li class="things-to-know__item">
+                <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" style="display: block; height: 16px; width: 16px; fill: currentcolor;"><path d="M16 1C7.716 1 1 7.716 1 16s6.716 15 15 15 15-6.716 15-15S24.284 1 16 1zm7.895 22.954l-9.526-5.5a1.5 1.5 0 0 1-.743-1.154l-.007-.145v-11h3V16.29l8.776 5.067-1.5 2.598z"></path></svg>
+                <span>체크인: 오후 3:00 이후</span>
+              </li>
+              <li class="things-to-know__item">
+                <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" style="display: block; height: 16px; width: 16px; fill: currentcolor;"><path d="M16 1C7.716 1 1 7.716 1 16s6.716 15 15 15 15-6.716 15-15S24.284 1 16 1zm7.895 22.954l-9.526-5.5a1.5 1.5 0 0 1-.743-1.154l-.007-.145v-11h3V16.29l8.776 5.067-1.5 2.598z"></path></svg>
+                <span>체크아웃 시간: 오전 11:00</span>
+              </li>
+              <li class="things-to-know__item">
+                <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" style="display: block; height: 16px; width: 16px; fill: currentcolor;"><path d="M19.862 24.105l1.535 1.536a2 2 0 0 0 2.327 2.327l1.55 1.548A4 4 0 0 1 19.365 26a3.913 3.913 0 0 1 .444-1.8l.052-.095zM11.757 16l8 8H10.81c.344.59.555 1.268.555 2a4 4 0 0 1-8 0c0-1.545.885-2.87 2.167-3.536.025-.039.05-.078.078-.116l.048-.055L9.95 18H8.364a3 3 0 0 0-1.976.743l-.145.136-3.829 3.829L1 21.294l3.829-3.83A5 5 0 0 1 8.1 16.008L8.364 16h3.393zM3.979 2.565l25.456 25.456-1.414 1.414L2.565 3.979l1.414-1.414zM7.365 24a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm23-22v2h-2.343a3 3 0 0 0-1.977.743l-.144.136-.536.535V19c0 .63-.122 1.23-.34 1.782l-8.929-8.929.06-.06-.184-.064-2.365-2.363A4 4 0 0 1 17.365 4a3.983 3.983 0 0 1 3.728 2.6l.066.192.499-.5.272-.27 2.556-2.558a5 5 0 0 1 3.271-1.457L28.022 2h2.343z"></path></svg>
+                <span>유아(만 2세 미만)에게 적합하지 않음</span>
+              </li>
+              <li class="things-to-know__item">
+                <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" style="display: block; height: 16px; width: 16px; fill: currentcolor;"><path d="M24.242 19H27v2.758L24.242 19zM23 15c1.103 0 2 .897 2 2h2c0-2.206-1.794-4-4-4h-4.758l2 2H23zm6 8.758l2 2V19h-2v4.758zM18 5V3c-2.636 0-4.875 1.71-5.679 4.079l1.701 1.701C14.14 6.678 15.87 5 18 5zM4 19c-1.103 0-2 .897-2 2v4c0 1.103.897 2 2 2h19.758l-8-8H4zm25-2h2c0-3.629-2.429-6.701-5.746-7.677A3.97 3.97 0 0 0 26 7c0-2.206-1.794-4-4-4v2c1.103 0 2 .897 2 2s-.897 2-2 2v2h1c3.309 0 6 2.691 6 6zM3.293 3.707l26 26 1.414-1.414-26-26-1.414 1.414z"></path></svg>
+                <span>흡연 금지</span>
+              </li>
+              <li class="things-to-know__item">
+                <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" style="display: block; height: 16px; width: 16px; fill: currentcolor;"><path d="M3.707 2.293l26 26-1.414 1.414-26-26 1.414-1.414zm8.164 13.821l11.149 11.15a3.993 3.993 0 0 1-3.053.612l-.234-.055L16 26.82l-3.733 1.001a4 4 0 0 1-2.941-.347l-.204-.118-.197-.131a4 4 0 0 1-1.08-5.398l.119-.177 3.907-5.536zM27 12a4 4 0 1 1 0 8 4 4 0 0 1 0-8zM5 12a4 4 0 1 1 0 8 4 4 0 0 1 0-8zm16-8a4 4 0 1 1 0 8 4 4 0 0 1 0-8zM11 4a4 4 0 0 1 3.381 6.138l-5.52-5.519A3.981 3.981 0 0 1 11 4z"></path></svg>
+                <span>반려동물 동반 불가</span>
+              </li>
+              <li class="things-to-know__item">
+                <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" style="display: block; height: 16px; width: 16px; fill: currentcolor;"><path d="M5.12 9.363l13.882 13.88c-.494.349-1.01.694-1.549 1.035L19.65 27.2a1.125 1.125 0 0 1-.433 1.7l-.111.043-.157.039-.04.006-.158.013H17v3h-2v-3h-1.75a1.125 1.125 0 0 1-1.117-1.264l.025-.131.067-.189.021-.045.103-.17 2.14-2.862C8.212 20.918 5 16.457 5 11c0-.556.041-1.103.12-1.637zm-1.413-7.07l26 26-1.414 1.414-26-26 1.414-1.414zM16 0c5.909 0 11 5.275 11 11 0 2.915-1.167 5.676-3.472 8.286L7.853 3.609A10.972 10.972 0 0 1 16 0zm6 7a2 2 0 1 0 0 4 2 2 0 0 0 0-4z"></path></svg>
+                <span>파티나 이벤트 금지</span>
+              </li>
+            </ul>
+            <button class="btn btn--more">
+              <span class="u-underline">더보기</span>
+              <svg class="icon--more" viewBox="0 0 18 18" role="presentation" aria-hidden="true" focusable="false"><path d="m4.29 1.71a1 1 0 1 1 1.42-1.41l8 8a1 1 0 0 1 0 1.41l-8 8a1 1 0 1 1 -1.42-1.41l7.29-7.29z" fill-rule="evenodd"></path></svg>
+            </button>
+          </div>
+
+          <div class="things-to-know__col">
+            <h3 class="things-to-know__title heading--3">건강과 안전</h3>
+            <ul class="things-to-know__list">
+              <li class="things-to-know__item">
+                <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" style="display: block; height: 16px; width: 16px; fill: currentcolor;"><path d="M5 5v.414l4 4v3.172L4.464 17.12C3.527 18.06 3 18.674 3 20v9c0 1.644 1.356 2.982 3 3 6.645-.012 10.645-.012 12 0 1.657.014 3-1 3-3v-9c0-1.351-.547-2.126-1.516-3.067L15 12.577V9a2.99 2.99 0 0 1 2.083-2.842 8.957 8.957 0 0 0 2.17 4.798l1.499-1.324A6.959 6.959 0 0 1 19.078 6H23V0H10a5 5 0 0 0-5 5zm14-3h2v2h-2zm-1.032 22.686h.004c.348 0 .69-.034 1.028-.084v2.02c-.34.039-.682.064-1.028.064h-.004a8.946 8.946 0 0 1-6.362-2.636A6.948 6.948 0 0 0 6.659 22h-.003A7.07 7.07 0 0 0 5 22.204v-2.048c.54-.1 1.093-.156 1.655-.156h.005a8.94 8.94 0 0 1 6.36 2.636 6.956 6.956 0 0 0 4.948 2.05zM11 10h2v2h-2zm17-9a1 1 0 1 1 2 0 1 1 0 0 1-2 0zm2 4a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm-3-2a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"></path></svg>
+                <span>에어비앤비의 사회적 거리 두기 및 관련 가이드라인이 적용됩니다.</span>
+              </li>
+              <li class="things-to-know__item">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" aria-hidden="true" role="presentation" focusable="false" style="display: block; height: 16px; width: 16px; fill: currentcolor;"><path d="M12.5 1A2.5 2.5 0 0 1 15 3.5v9a2.5 2.5 0 0 1-2.5 2.5h-9A2.5 2.5 0 0 1 1 12.5v-9A2.5 2.5 0 0 1 3.5 1zM5.846 9H4.515A3.632 3.632 0 0 0 7 11.485v-1.33A2.384 2.384 0 0 1 5.846 9zm5.64 0h-1.332a2.384 2.384 0 0 1-1.153 1.154v1.331A3.632 3.632 0 0 0 11.484 9zM8 7a1 1 0 1 0 0 2 1 1 0 0 0 0-2zM7 4.515A3.632 3.632 0 0 0 4.515 7h1.33A2.384 2.384 0 0 1 7 5.845zm2 0v1.33c.508.237.919.647 1.155 1.155h1.33A3.632 3.632 0 0 0 9 4.515zM12.75 2.5a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5z"></path></svg>
+                <span>일산화탄소 경보기</span>
+              </li>
+              <li class="things-to-know__item">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" aria-hidden="true" role="presentation" focusable="false" style="display: block; height: 16px; width: 16px; fill: currentcolor;"><path d="M8 .5a7.5 7.5 0 1 1 0 15 7.5 7.5 0 0 1 0-15zM5.846 9H4.515A3.632 3.632 0 0 0 7 11.485v-1.33A2.384 2.384 0 0 1 5.846 9zm5.64 0h-1.332a2.384 2.384 0 0 1-1.153 1.154v1.331A3.632 3.632 0 0 0 11.484 9zM8 7a1 1 0 1 0 0 2 1 1 0 0 0 0-2zM7 4.515A3.632 3.632 0 0 0 4.515 7h1.33A2.384 2.384 0 0 1 7 5.845zm2 0v1.33c.508.237.919.647 1.155 1.155h1.33A3.632 3.632 0 0 0 9 4.515zm3-1.265a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5z"></path></svg>
+                <span>화재경보기</span>
+              </li>
+            </ul>
+            <button class="btn btn--more">
+              <span class="u-underline">더보기</span>
+              <svg class="icon--more" viewBox="0 0 18 18" role="presentation" aria-hidden="true" focusable="false"><path d="m4.29 1.71a1 1 0 1 1 1.42-1.41l8 8a1 1 0 0 1 0 1.41l-8 8a1 1 0 1 1 -1.42-1.41l7.29-7.29z" fill-rule="evenodd"></path></svg>
+            </button>
+          </div>
+
+          <div class="things-to-know__col">
+            <h3 class="things-to-know__title heading--3">환불 정책</h3>
+            <p>5월 8일 오후 12:00 전에 취소하면 부분 환불을 받으실 수 있습니다.</p>
+            <button class="btn btn--more">
+              <span class="u-underline">더보기</span>
+              <svg class="icon--more" viewBox="0 0 18 18" role="presentation" aria-hidden="true" focusable="false"><path d="m4.29 1.71a1 1 0 1 1 1.42-1.41l8 8a1 1 0 0 1 0 1.41l-8 8a1 1 0 1 1 -1.42-1.41l7.29-7.29z" fill-rule="evenodd"></path></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      
+      <!-- 다른 옵션 찾아보기 -->
+      <div class="other-location-cover">
+        <div class="other-location">
+  
+          <h2 class="heading--2">Donggyo-dong, Mapo-gu 및 인근의 다른 옵션 살펴보기</h2>
+          <ul class="other-location__list">
+            <li class="other-location__item">인천</li>
+            <li class="other-location__item">대전</li>
+            <li class="other-location__item">수원시</li>
+            <li class="other-location__item">춘천시</li>
+            <li class="other-location__item">용인시</li>
+            <li class="other-location__item">Pyeongtaek-si</li>
+            <li class="other-location__item">양평군</li>
+            <li class="other-location__item">Ansan-si</li>
+            <li class="other-location__item">속초시</li>
+            <li class="other-location__item">Yeongjongdo</li>
+            <li class="other-location__item">원주시</li>
+            <li class="other-location__item">부산</li>
+          </ul>
+          <div class="other-location__region">
+            <span>에어비앤비</span>
+            <svg viewBox="0 0 18 18" role="presentation" aria-hidden="true" focusable="false" style="height: 7px; width: 7px; display: block; fill: currentcolor;"><path d="m4.29 1.71a1 1 0 1 1 1.42-1.41l8 8a1 1 0 0 1 0 1.41l-8 8a1 1 0 1 1 -1.42-1.41l7.29-7.29z" fill-rule="evenodd"></path></svg>
+            <span>한국</span>
+            <svg viewBox="0 0 18 18" role="presentation" aria-hidden="true" focusable="false" style="height: 7px; width: 7px; display: block; fill: currentcolor;"><path d="m4.29 1.71a1 1 0 1 1 1.42-1.41l8 8a1 1 0 0 1 0 1.41l-8 8a1 1 0 1 1 -1.42-1.41l7.29-7.29z" fill-rule="evenodd"></path></svg>
+            <span>Seoul Region</span>
+            <svg viewBox="0 0 18 18" role="presentation" aria-hidden="true" focusable="false" style="height: 7px; width: 7px; display: block; fill: currentcolor;"><path d="m4.29 1.71a1 1 0 1 1 1.42-1.41l8 8a1 1 0 0 1 0 1.41l-8 8a1 1 0 1 1 -1.42-1.41l7.29-7.29z" fill-rule="evenodd"></path></svg>
+            <span>서울</span>
+          </div>
+        </div>
+      </div>
+    </main>
+
     <footer></footer>
   </body>
 </html>
